@@ -1,0 +1,56 @@
+<!-- explorer.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Explorer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Đường dẫn đến file CSS -->
+</head>
+<body>
+    <div class="file-explorer">
+        <h1>File Explorer</h1>
+        <div class="file-list">
+            <!-- Thêm các thẻ div để hiển thị các tệp ảnh và video -->
+            <!-- Điền thông tin của các tệp vào src và alt cho ảnh, và src cho video -->
+            <div class="file">
+                <img src="example_image.jpg" alt="Example Image">
+                <p class="file-name">example_image.jpg</p>
+            </div>
+            <div class="file">
+                <video controls>
+                    <source src="example_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="file-name">example_video.mp4</p>
+            </div>
+            <!-- Thêm các tệp khác tương tự nếu cần -->
+        </div>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Đường dẫn đến file JavaScript -->
+  <div class="explorer">
+    <div class="directory-tree">
+      <!-- Tree view of directories -->
+      <ul id="directoryTree">
+        <!-- Directory and file items will be dynamically generated here -->
+      </ul>
+    </div>
+    <div class="file-viewer">
+      <!-- File view area for displaying images/videos -->
+      <div id="filePreview">
+        <!-- Selected image/video will be displayed here -->
+      </div>
+      <!-- File information area -->
+      <div id="fileInfo">
+        <!-- Information of selected file will be displayed here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Include JavaScript file -->
+  <script src="scripts.js"></script>
+</body>
+</html>
+
